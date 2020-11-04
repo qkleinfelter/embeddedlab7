@@ -1,0 +1,12 @@
+Dependencies for Project 'Lab7', Target 'Lab7': (DO NOT MODIFY !)
+F (.\startup.s)(0x5199378E)(--cpu Cortex-M4 --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary--list .\startup.lst --xref -o .\startup.o --depend .\startup.d)
+F (.\TableTrafficLight.c)(0x5FA1F77D)(-c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\..-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR-o .\tabletrafficlight.o --omf_browse .\tabletrafficlight.crf --depend .\tabletrafficlight.d)
+I (TExaS.h)(0x56994DCA)
+I (..\inc\tm4c123gh6pm.h)(0x53E630EA)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C86004)
+I (SysTick.h)(0x54D008AC)
+F (.\SysTick.c)(0x59444A68)(-c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\..-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR-o .\systick.o --omf_browse .\systick.crf --depend .\systick.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C86004)
+I (..\inc/tm4c123gh6pm.h)(0x53E630EA)
+F (.\SysTick.h)(0x54D008AC)()
+F (.\texas.o)(0x56994FBA)()
