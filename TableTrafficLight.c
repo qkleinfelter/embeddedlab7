@@ -97,18 +97,18 @@ typedef const struct State STyp;
 // Bit 0 - PB0 - West Green
 
 STyp FSM[12]={
- {0x61, 10, {goS, waitS, goS, waitS, stopWaitS, stopWaitS, stopWaitS, stopWaitS}}, 																						// goS
- {0x62, 10, {goW, goW, goW, goW, stopSW, stopSW, stopSW, stopSW}},																														// waitS
- {0x4C, 10, {goW, goW, waitW, waitW, stopWaitW, stopWaitW, stopWaitW, stopWaitW}},																						// goW
- {0x54, 10, {goS, goS, goS, goS, stopSW, stopSW, stopSW, stopSW}},																														// waitW
- {0x62, 10, {stopSW, stopSW, stopSW, stopSW, stopSW, stopSW, stopSW, stopSW}},																								// stopWaitS
- {0x54, 10, {stopSW, stopSW, stopSW, stopSW, stopSW, stopSW, stopSW, stopSW}},																								// stopWaitW
- {0xA4, 10, {stopBlink1SW, stopBlink1SW, stopBlink1SW, stopBlink1SW, stopBlink1SW, stopBlink1SW, stopBlink1SW, stopBlink1SW}},// stopSW
- {0x64, 10, {stopBlink2SW, stopBlink2SW, stopBlink2SW, stopBlink2SW, stopBlink2SW, stopBlink2SW, stopBlink2SW, stopBlink2SW}},// stopBlink1SW
- {0x24, 10, {stopBlink3SW, stopBlink3SW, stopBlink3SW, stopBlink3SW, stopBlink3SW, stopBlink3SW, stopBlink3SW, stopBlink3SW}},// stopBlink2SW
- {0x64, 10, {stopBlink4SW, stopBlink4SW, stopBlink4SW, stopBlink4SW, stopBlink4SW, stopBlink4SW, stopBlink4SW, stopBlink4SW}},// stopBlink3SW
- {0x24, 10, {stopSolidSW, stopSolidSW, stopSolidSW, stopSolidSW, stopSolidSW, stopSolidSW, stopSolidSW, stopSolidSW}},				// stopBlink4SW
- {0x64, 10, {goS, goW, goS, goW, goW, goW, goS, goS}}																																				  // stopSolidSW
+ {0x61, 200, {goS, waitS, goS, waitS, stopWaitS, stopWaitS, stopWaitS, waitS}}, 																						   // goS
+ {0x62, 200, {goW, goW, goW, goW, stopSW, stopSW, stopSW, goW}},																														   // waitS
+ {0x4C, 200, {goW, goW, waitW, waitW, stopWaitW, stopWaitW, stopWaitW, stopWaitW}},																						 // goW
+ {0x54, 200, {goS, goS, goS, goS, stopSW, stopSW, stopSW, stopSW}},																														 // waitW
+ {0x62, 200, {stopSW, stopSW, stopSW, stopSW, stopSW, stopSW, stopSW, stopSW}},																								 // stopWaitS
+ {0x54, 200, {stopSW, stopSW, stopSW, stopSW, stopSW, stopSW, stopSW, stopSW}},																								 // stopWaitW
+ {0xA4, 200, {stopBlink1SW, stopBlink1SW, stopBlink1SW, stopBlink1SW, stopBlink1SW, stopBlink1SW, stopBlink1SW, stopBlink1SW}},// stopSW
+ {0x64, 100, {stopBlink2SW, stopBlink2SW, stopBlink2SW, stopBlink2SW, stopBlink2SW, stopBlink2SW, stopBlink2SW, stopBlink2SW}},// stopBlink1SW
+ {0x24, 100, {stopBlink3SW, stopBlink3SW, stopBlink3SW, stopBlink3SW, stopBlink3SW, stopBlink3SW, stopBlink3SW, stopBlink3SW}},// stopBlink2SW
+ {0x64, 100, {stopBlink4SW, stopBlink4SW, stopBlink4SW, stopBlink4SW, stopBlink4SW, stopBlink4SW, stopBlink4SW, stopBlink4SW}},// stopBlink3SW
+ {0x24, 100, {stopSolidSW, stopSolidSW, stopSolidSW, stopSolidSW, stopSolidSW, stopSolidSW, stopSolidSW, stopSolidSW}},				 // stopBlink4SW
+ {0x64, 200, {goS, goW, goS, goW, goW, goW, goS, goS}}																																				 // stopSolidSW
 };
 	
 
