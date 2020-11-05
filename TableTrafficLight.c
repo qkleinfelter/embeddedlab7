@@ -89,12 +89,12 @@ typedef const struct State STyp;
 // State Machine Output:
 // Bit 7 - PF3 - green LED, walk light
 // Bit 6 - PF1 - red LED, don't walk light
-// Bit 5 - PB5 - South Red
-// Bit 4 - PB4 - South Yellow
-// Bit 3 - PB3 - South Green
-// Bit 2 - PB2 - West Red
-// Bit 1 - PB1 - West Yellow
-// Bit 0 - PB0 - West Green
+// Bit 5 - PB5 - West Red
+// Bit 4 - PB4 - West Yellow
+// Bit 3 - PB3 - West Green
+// Bit 2 - PB2 - South Red
+// Bit 1 - PB1 - South Yellow
+// Bit 0 - PB0 - South Green
 
 STyp FSM[12]={
  {0x61, 200, {goS, waitS, goS, waitS, stopWaitS, stopWaitS, stopWaitS, waitS}}, 																						   // goS
